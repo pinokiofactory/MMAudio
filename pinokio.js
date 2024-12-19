@@ -1,8 +1,8 @@
 const path = require('path')
 module.exports = {
-  version: "2.0",
+  version: "3.0",
   title: "MMAudio",
-  description: "",
+  description: "Generate synchronized audio from video and/or text inputs",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
