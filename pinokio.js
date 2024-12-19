@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "3.0",
   title: "MMAudio",
-  description: "Generate synchronized audio from video and/or text inputs",
+  description: "[NVIDIA ONLY] Generate synchronized audio from video and/or text inputs https://github.com/hkchengrex/MMAudio",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
