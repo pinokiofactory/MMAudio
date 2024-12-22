@@ -5,7 +5,8 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/{{platform === 'darwin' ? 'cocktailpeanut' : 'hkchengrex'}}/MMAudio.git app",
+          //"git clone https://github.com/{{platform === 'darwin' ? 'cocktailpeanut' : 'hkchengrex'}}/MMAudio.git app",
+          "git clone https://github.com/hkchengrex/MMAudio.git app",
         ]
       }
     },
