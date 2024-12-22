@@ -37,7 +37,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "uv pip install torch==2.5.1 torchvision torchaudio==2.5.1"
+        "message": "uv pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu"
       }
     },
     // linux nvidia
