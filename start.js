@@ -7,12 +7,9 @@ module.exports = async (kernel) => {
         method: "shell.run",
         params: {
           venv: "env",                // Edit this to customize the venv folder path
-          env: {
-            GRADIO_SERVER_PORT: port
-          },                   // Edit this to customize environment variables (see documentation)
           path: "app",                // Edit this to customize the path to start the shell from
           message: [
-            "python gradio_demo.py",    // Edit with your custom commands
+            `python gradio_demo.py --port ${port}`,    // Edit with your custom commands
           ],
           on: [{
             // The regular expression pattern to monitor.
