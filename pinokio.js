@@ -4,6 +4,7 @@ module.exports = {
   title: "MMAudio",
   description: "Generate synchronized audio from video and/or text inputs https://github.com/hkchengrex/MMAudio",
   icon: "icon.png",
+  bitcoin: "bc1prkcu8ff3t37mzle2ek3gfxxde3fh6xufwht9azt6radzzmnz43xsuuukyz",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
     let running = {
