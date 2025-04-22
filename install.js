@@ -33,12 +33,6 @@ module.exports = {
           // "uv pip install -r ../pyproject.toml" //change it back to just pyproject.toml once the original repo fixes their errors
         ]
       }
-    },
-    {
-      method: "fs.link",
-      params: {
-        venv: "app/env"
-      }
     }
   ]
 }
