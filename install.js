@@ -15,7 +15,7 @@ module.exports = {
         path: "app",
         message: [
           "uv pip install -r pyproject.toml",
-          "uv pip install huggingface_hub==0.36.0 hf-xet"
+          "uv pip install huggingface_hub==0.36.0 hf-xet gradio==5.50.0"
         ]
       }
     },
