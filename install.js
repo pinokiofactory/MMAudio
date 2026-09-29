@@ -4,6 +4,7 @@ module.exports = {
   },
   run: [
     {
+      when: "{{!exists('app')}}",
       method: "shell.run",
       params: {
         message: [
@@ -12,9 +13,17 @@ module.exports = {
       }
     },
     {
+      when: "{{exists(app/env)}}",
+      method: "fs.rm",
+      params: {
+        path: "app/env"
+      }
+    },
+    {
       method: "shell.run",
       params: {
-        venv: "env",
+        venv_python: "3.11",
+        venv: "venv",
         path: "app",
         message: [
           "uv pip install -r pyproject.toml",
@@ -27,7 +36,7 @@ module.exports = {
       params: {
         uri: "torch.js",
         params: {
-          venv: "env",
+          venv: "venv",
           path: "app",
           // xformers: true
         }
